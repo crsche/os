@@ -1,0 +1,19 @@
+[package]
+name = "kernel"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bootloader-x86_64-common = "0.11.4"
+bootloader_api = "0.11.4"
+conquer-once = { version = "0.4.0", default-features = false }
+log = { version = "0.4.20", default-features = false }
+# qoi = { version = "0.4.1", default-features = false }
+# bitcode = { version = "0.4.0", default-features = false }
+
+[[bin]]
+name = "kernel"
+test = false
+bench = false
